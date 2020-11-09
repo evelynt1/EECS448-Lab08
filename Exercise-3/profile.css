@@ -1,0 +1,54 @@
+*{
+    background-color: blue;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 250%;
+    font-family: arial;
+    color: white;
+    margin: 5%; 
+    text-align: center;
+    background-image: url("https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/cheetah_16x9.jpg?itok=vCM-QvIu");
+}
+
+img{
+    padding-top: 2%;
+    padding-left: 37%;
+    display: flex;
+    justify-content: center;
+}
+
+.links {
+    padding-top: 2%;
+    padding-left: 50%;
+    position: relative;
+}
+
+.bio {
+    background: white;
+    margin: 2%;
+    color: white;
+}
+
+p {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 150%;
+}
+
+.youtube {
+    text-align: left; 
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 35%;
+    margin-right: 21%;
+}
+
+.links a:hover{
+    color: white;
+  }
+
