@@ -29,6 +29,10 @@
                 text = "Password must be at least 8 characters long.";
                 alert(text);
             }
+            else if(firstBox.value.length === secondBox.value.length)
+            {
+                alert("Passwords match!");
+            }
         // }
     }
 // }
