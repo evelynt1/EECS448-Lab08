@@ -1,38 +1,20 @@
-// function navigation()
-// {
-//     var images = document.getElementById("pictures"); 
-//     images.width = 1000;
-//     images.height = 2000;
-// }
-
-var imgIndex = 1;
-showImg(imgIndex);
-
-function nextImg(n)
+document.addEventListener("DOMContentLoaded", () => 
 {
-    showImg(imgIndex += n);
-}
+    let img = document.getElementById("img");
+    let filepaths = ["cat.jpg", "dolphin.jpg", "pug.jpg", "eagle.jpg", "panda.jpg"];
+    let tracker = 0;
 
-function currentImg(n)
-{
-    showImg(imgIndex =  n);
-}
+    document.getElementById("prev").addEventListener("click", () => 
+    {
+        tracker--;
+        if (tracker < 0) tracker = 4;
+        img.src = filepaths[tracker];
+    });
+    document.getElementById("next").addEventListener("click", () => 
+    {
+        tracker++;
+        if (tracker > 4) tracker = 0;
+        img.src = filepaths[tracker];
+    });
+});
 
-function showImg(n)
-{
-    var i;
-    var img = document.getElementsByClassName("img");
-    if(n > img.length)
-    {
-        imgIndex = 1;
-    }
-    if(n < 1)
-    {
-        imgIndex = img.length;
-    }
-    for(i = 0; i < img.length; i++)
-    {
-        img[i].style.display = "None";
-    }
-    img[imgIndex-1].style.display = "block";
-}
